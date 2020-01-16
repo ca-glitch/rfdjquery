@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=fr dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="./asset/js/jquery.js"></script>
+    <script src="./asset/js/jqueryui.js"></script>
+    <link rel="stylesheet" href="./asset/css/style.css" />
+  </head>
+  <body>
+    <script>
+    $(function() {
+      $("#michel").accordion();
+    })
+    </script>
+    <div=id="michel">
+    <h1>Titre 1</h1>
+    <p>Ceci est un paragraphe, gogogogog</p>
+    <h1>Titre 2</h1>
+    <p>Ceci est un paragraphe, gogogogog</p>
+    <h1>Titre 3</h1>
+    <p>Ceci est un paragraphe, gogogogog</p>
+    <script>
+      $(document).ready(function() {
+        $("#cacher").click(function() {
+          $("p").fadeOut(2000);
+        });
+        $("#afficher").click(function() {
+          $("p").fadeIn(4000);
+        })
+      });
+    </script>
+    <p>Je suis Michel</p>
+    <button id="afficher">Afficher</button>
+    <button id="cacher">Cacher</button>
+  </body>
+</html>
